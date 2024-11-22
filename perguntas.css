@@ -161,6 +161,14 @@ form{
     padding: 40px 90px 40px 90px;
 }
 
+select{
+    padding: 0px;
+    font-family: 'Kadwa';
+    color: #46562E;
+    font-size: 20px;
+    border-radius: 37px;
+}
+
 input{
     border-radius: 67px;
     width: 250px;
@@ -177,7 +185,20 @@ input{
     color: #46562E;
 }
 
-footer{
+h2{
+    font-family: 'Kadwa';
+    font-size: 30px;
+    padding: 30px 0px 10px 30px;
+}
+
+p{
+    font-family: 'Kadwa';
+    font-size: 24px;
+    padding: 10px 0px 10px 30px;
+}
+
+
+#footer{
     background: #1A2011; 
     text-align: center;
     width: 1440;

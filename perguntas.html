@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="logo do jogo.png" type="image/x-icon">
     <link rel="stylesheet" href="perguntas.css">
     <title>Perguntas Frequentes</title>
+    <script src="perguntas.js"></script>
 </head>
 <body>
     <header class="header">
@@ -24,12 +25,19 @@
         </section>
         <section>
             <article class="card_maior">
-                <form action="#">
-                    <label for="">Selecione uma dúvida: </label>
-                    <input type="text" id="categoria" name="categoria" placeholder="Selecione uma categoria">
+                <form>
+                <label for="categoria">Selecione uma dúvida: </label>
+                <select id="categoria" onchange="mostrarConteudo()">
+                    <option value="">Selecione uma categoria</option>
+                    <option value="Conta e Segurança">Conta e Segurança</option>
+                    <option value="Atualizações">Atualizações</option>
+                    <option value="Público">Público</option>
+                    <option value="Jogabilidade">Jogabilidade</option>
+                </select>        
                 </form>
+
                 <section>
-                    <article class="card_menor">
+                    <article class="card_menor" id="conteudo">
                         <p class="texto_card">
                             Selecione uma categoria para ver o conteúdo
                         </p>
@@ -41,8 +49,8 @@
         </section>
 
     </main>
-    <footer class="footer">
-        <p>© 2024 Copyright . Todos os direitos reservados.</p>
+    <footer>
+        <p id="footer">© 2024 Copyright . Todos os direitos reservados.</p>
     </footer>
     
 </body>
